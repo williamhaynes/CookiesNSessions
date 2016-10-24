@@ -8,7 +8,7 @@
 
 $username = $_POST["name"];
 $password = $_POST["password"];
-$_SESSION['accessLevel'] = "null";
+$_SESSION['accessLevel'] = "standarduser";
 
 if($username=="username" && $password=="password"){
     $_SESSION['accessLevel'] = "standarduser";
