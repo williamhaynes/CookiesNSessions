@@ -6,8 +6,8 @@
 * Time: 14:04
 */
 
-$username = $_POST("name");
-$password = $_POST("password");
+$username = $_POST["name"];
+$password = $_POST["password"];
 
 if($username=="username" && $password=="password"){
     setcookie('access_level_cookie', 'standarduser');

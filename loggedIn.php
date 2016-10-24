@@ -6,8 +6,8 @@
  * Time: 14:11
  */
 
-session_start()
-$accesslevel = $_COOKIE('access_level_cookie');
+session_start();
+$accesslevel = $_COOKIE['access_level_cookie'];
 displayAccessLevelInformation($accesslevel);
 
 function displayAccessLevelInformation($accessLevel){
