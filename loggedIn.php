@@ -6,7 +6,6 @@
  * Time: 14:11
  */
 
-session_start();
 print $_SESSION['accesslevel'];
 displayAccessLevelInformation($_SESSION['accesslevel']);
 

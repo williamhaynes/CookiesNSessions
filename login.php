@@ -6,6 +6,7 @@
 * Time: 14:04
 */
 
+session_start();
 $username = $_POST["name"];
 $password = $_POST["password"];
 
