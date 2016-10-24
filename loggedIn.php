@@ -7,7 +7,6 @@
  */
 
 session_start();
-$accesslevel = $_COOKIE['access_level_cookie'];
 displayAccessLevelInformation($accesslevel);
 
 function displayAccessLevelInformation($accessLevel){
