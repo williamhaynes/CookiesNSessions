@@ -7,7 +7,8 @@
  */
 
 session_start();
-displayAccessLevelInformation($_SESSION['accessLevel']);
+print $_SESSION['accesslevel'];
+displayAccessLevelInformation($_SESSION['accesslevel']);
 
 function displayAccessLevelInformation($accessLevel){
     if($accessLevel=="standarduser"){
@@ -16,9 +17,6 @@ function displayAccessLevelInformation($accessLevel){
     elseif($accessLevel =="root"){
         echo "<p style = \"background-color: red\">You are currently logged in as a Root User</p>";
         echo "<p style = \"background-color: red\">You now have additional admin features</p>";
-    }
-    else{
-        echo "<body style = \"background-color: red\"></body>";
     }
 }
 

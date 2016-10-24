@@ -8,10 +8,9 @@
 
 $username = $_POST["name"];
 $password = $_POST["password"];
-$_SESSION['accessLevel'] = "null";
 
 if($username=="username" && $password=="password"){
-    $_SESSION['accessLevel'] = "standarduser";
+    $_SESSION['accesslevel'] = "standarduser";
 }
 
 header('Location: loggedIn.php');
